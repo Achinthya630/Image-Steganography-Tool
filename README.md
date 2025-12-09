@@ -109,8 +109,8 @@ Simply:
 
 ## 👨‍💻 Author
 
-**Achinthya**
-Steganography Tool – Web-Based Data Hiding System
+**Achinthya Krishna Alangaru**
+
 
 ---
 
@@ -120,6 +120,3 @@ This project is open-source and free to use for educational and personal purpose
 
 ---
 
-
-
-Just tell me—I can generate an enhanced version!
