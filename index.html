@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Steganography Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">Image Steganography Tool</h1>
+
+<div class="menu">
+    <button class="btn" onclick="showEncrypt()">Encrypt</button>
+    <button class="btn" onclick="showDecrypt()">Decrypt</button>
+</div>
+
+<!-- Encrypt Section -->
+<div id="encrypt" class="section hidden fade">
+    <h2>Encrypt Message into Image</h2>
+
+    <textarea id="secretMessage" class="input-box" placeholder="Enter secret message"></textarea>
+
+    <div id="dropEncrypt" class="drop-zone">
+        <p>Drag & Drop Image Here<br>or Click to Upload</p>
+        <input type="file" id="inputImage" hidden>
+    </div>
+    <img id="previewEncrypt" class="preview hidden">
+    <button id="remove_inputImage" class="btn hidden" onclick="removeFile('inputImage','previewEncrypt','downloadLink')">Remove File</button>
+
+    <button class="btn" onclick="encryptMessage()">Encrypt</button>
+
+    <canvas id="canvas" class="hidden"></canvas>
+    <a id="downloadLink" class="download-link"></a>
+</div>
+
+<!-- Decrypt Section -->
+<div id="decrypt" class="section hidden fade">
+    <h2>Decrypt Message from Image</h2>
+
+    <div id="dropDecrypt" class="drop-zone">
+        <p>Drag & Drop Encoded Image Here<br>or Click to Upload</p>
+        <input type="file" id="encodedImage" hidden>
+    </div>
+
+    <img id="previewDecrypt" class="preview hidden">
+    <button id="remove_encodedImage" class="btn hidden" onclick="removeFile('encodedImage','previewDecrypt')">Remove File</button>
+
+    <button class="btn" onclick="decryptMessage()">Decrypt</button>
+
+    <p id="outputMessage" class="output"></p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

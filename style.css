@@ -1,0 +1,108 @@
+body {
+    font-family: Poppins, Arial;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: white;
+}
+
+.title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.menu {
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background: #00bcd4;
+    color: black;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #02a1bb;
+    transform: scale(1.08);
+}
+
+.section {
+    width: 60%;
+    margin: auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.input-box {
+    width: 80%;
+    height: 120px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.drop-zone {
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    border: 2px dashed #00eaff;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.drop-zone:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.03);
+}
+
+.output {
+    font-size: 20px;
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
+
+.download-link {
+    display: block;
+    margin-top: 20px;
+    color: #00eaff;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.fade {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.preview {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    animation: fadeIn 0.7s ease-in-out;
+}
